@@ -5,15 +5,14 @@ date: '2023-11-05 16:50:41 -0500'
 categories: [HTB, Easy]
 tags: [Web,CVE,Linux, RCE, Ubuntu, Docker] 
 author: MadLies    
-img_path: assets/img/analytics/
 image:
-  path: preview.jpeg
+  path: /analytics/preview.jpeg
   alt: Analytics
 ---
 
 ## Resumen
 
-![logo](analyt.png){: .right w="200" h="200" }
+![logo](/analytics/analyt.png){: .right w="200" h="200" }
 
 **Analytics** es una máquina que consiste en abusar de un servicio web que se encuentra haciendo uso del software "Metabase," el cual es vulnerable a una ejecución remota de código (RCE) sin necesidad de autenticación. Una vez dentro de la máquina, se puede observar que se está ejecutando en un contenedor Docker, pero esto no es un problema, ya que las credenciales se encuentran almacenadas en texto plano. Por lo tanto, se puede obtener acceso a la máquina. Al revisar la versión del sistema operativo, se nota que el kernel es vulnerable. En mi opinión, es una gran máquina, fue divertida y bastante útil para practicar la enumeración de datos, la identificación de versiones y la búsqueda de exploits 
 
@@ -61,7 +60,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Al ver que dentro del puerto 80 hay un sitio web, se puede intentar abrirlo para ver qué contiene, pero se encuentra relacionado al dominio **analytics.htb**, por lo que hay que guardarlo en el archivo **/etc/hosts**
 
-![etchost](etchosts.png)
+![etchost](/analytics/etchosts.png)
 
 ```bash
 # Host addresses
@@ -78,7 +77,7 @@ ff02::2    ip6-allrouters
 
 Después de arreglar eso, se puede ver un sitio web en el que existe un inicio de sesión.
 
-![web](web.png)
+![web](/analytics/web.png)
 
 Pero al hacer clic en el botón, redirige a un nuevo subdominio llamado ***data***, por lo que es necesario agregarlo al archivo ***/etc/hosts***.
 
@@ -96,14 +95,14 @@ ff02::2    ip6-allrouters
 
 El inicio de sesión está haciendo uso de Metabase para la autenticación. Por lo que se puede investigar un poco más sobre él.
 
-![login](login.png)
+![login](/analytics/login.png)
 
 > Metabase es la herramienta de análisis empresarial o business inteligente que se integra con nuestro software de gestión empresarial y que permite el análisis de la información de tu empresa. 
 {: .prompt-info }
 
 Por lo que se puede buscar algún **exploit** reciente para intentar ganar acceso a la aplicación, y Lo primero que aparece es la posibilidad de ejecutar comandos sin necesidad de estar autenticado.
 
-![exploit](exploit.png)
+![exploit](/analytics/exploit.png)
 
 ## Explotación
 

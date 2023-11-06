@@ -5,7 +5,7 @@ date: '2023-11-05 16:50:41 -0500'
 categories: [HTB, Easy]
 tags: [Web,CVE,Linux, RCE, Ubuntu, Docker] 
 author: MadLies    
-img_path: /assets/img/analytics/
+img_path: assets/img/analytics/
 image:
   path: preview.jpeg
   alt: Analytics

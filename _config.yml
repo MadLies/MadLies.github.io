@@ -39,11 +39,11 @@ social:
   email: jdwilches.c@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    #- https://twitter.com/username # change to your twitter homepage
-    #- https://github.com/MadLies # change to your github homepage
+    # https://twitter.com/username # change to your twitter homepage
+    - https://github.com/MadLies # change to your github homepage
     # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # change to your linkedin homepage
+    - https://www.facebook.com/username
+    - https://www.linkedin.com/in/juanwilchesmadlies # change to your linkedin homepage
 
 google_site_verification: # fill in to your verification string
 
@@ -113,7 +113,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "/"
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 

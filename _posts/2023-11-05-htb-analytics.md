@@ -4,7 +4,6 @@ title: HTB Analytics
 date: '2023-11-05 16:50:41 -0500'
 categories: [HTB, Easy]
 tags: [Web, CVE, Linux, RCE, Ubuntu, Docker] 
-author: MadLies    
 image:
   path: /analytics/preview.jpeg
   alt: Analytics

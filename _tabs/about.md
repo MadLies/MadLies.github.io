@@ -17,7 +17,7 @@ order: 4
 
 > Como mencioné anteriormente, me gustaría compartir las certificaciones que obtengo a lo largo del tiempo. A continuación, encontrarás una lista que llenaré con el tiempo a medida que obtenga nuevas certificaciones.
 
- - [ ] ECPPT
+- [ ] ECPPT
 - [ ] BSCP
 - [ ] CRTP
 - [ ] OSWP

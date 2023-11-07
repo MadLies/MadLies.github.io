@@ -6,7 +6,7 @@ order: 4
 
 ## ***Whoami 🦆***
 
->Hola a todos soy MadLies, un joven entusiasta del pentesting, el hacking, apasionado por la ciberseguridad y la exploración de sistemas informáticos. En este espacio, quiero comparitir sobre mi emocionante aventura en el mundo del pentesting, donde documentaré mis avances, descubrimientos y experiencias.
+>Hola a todos soy MadLies, un joven entusiasta del pentesting, el hacking, apasionado por la ciberseguridad y la exploración de sistemas informáticos. En este espacio, quiero compartir mi emocionante aventura en el mundo del pentesting, donde documentaré mis avances, descubrimientos y experiencias.
 {: .prompt-tip }
 
 ## ***Mi Misión 🦖***
@@ -15,7 +15,7 @@ order: 4
 
 ## ***Goals 📜***
 
-> Como mencioné anteriormente, me gustaría compartir las certificaciones que obtengo a lo largo del tiempo. A continuación, encontrarás una lista que llenaré con el tiempo a medida que obtenga nuevas certificaciones.
+> Como mencioné anteriormente, me gustaría compartir las certificaciones que obtengo a lo largo del tiempo. A continuación, encontrarás una lista de las certifiaciones que quiero obtener, iré marcando cada elemento a medida que consiga dicha certificación.
 
 - [ ] ECPPT
 - [ ] BSCP

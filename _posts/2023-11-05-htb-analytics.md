@@ -144,7 +144,7 @@ b3190b9a602c:/$
 Pero parece que se está dentro de un contenedor, por lo que se quiere escapar de él.
 
 
-## Doker breakout
+## Docker breakout
 
 Al revisar las variables de entorno, se puede ver que existen algunas que parecen ser credenciales.
 

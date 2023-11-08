@@ -16,7 +16,7 @@ order: 4
 ## ***Goals 📜***
 
 > Como mencioné anteriormente, me gustaría compartir las certificaciones que obtengo a lo largo del tiempo. A continuación encontrarás una lista de las certificaciones que quiero obtener, iré marcando cada elemento a medida que consiga dicha certificación.
-
+- [x] CPPJ
 - [ ] ECPPT
 - [ ] BSCP
 - [ ] CRTP

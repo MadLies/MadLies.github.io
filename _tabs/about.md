@@ -24,3 +24,14 @@ order: 4
 - [ ] OSCP
 - [ ] OSCE
 
+
+## **Hacking Webs 🥇**  
+
+Puedes ver mi perfil en algunas de las webs que utilizo para practicar:
+
+
+| Web | Badge  |
+|:----------------------------:|:-------------------:|
+|  TryHackMe  | <script src="https://tryhackme.com/badge/1767335"></script> |
+| Hack The Box| [![MadLies](https://www.hackthebox.eu/badge/image/1189580)](https://app.hackthebox.com/profile/1189580)|
+

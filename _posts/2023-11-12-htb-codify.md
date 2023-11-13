@@ -3,7 +3,7 @@ layout: post
 title: HTB Codify
 date: '2023-11-12 16:11:33 -0500'
 categories: [HTB, Easy]
-tags: [ CVE , Web, Javascript, RCE , SQL , Enumeration, Bash , Python , Sudoers , Regex , John ]
+tags: [ CVE , Web, Javascript, RCE , SQL , Enumeration, Bash , Python , Sudoers , Regex , John, Hash ]
 image:
   path: /codify/preview.jpg
   alt: Codify

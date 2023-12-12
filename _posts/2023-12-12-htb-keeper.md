@@ -166,7 +166,7 @@ Al examinar el contenido del archivo, se descubre la presencia de dos archivos r
 
 Durante la investigación, se descubre que Keepass presenta una vulnerabilidad reciente **(CVE-2023-32784)** que permite dumpear la clave maestra, posibilitando el acceso al sistema.
 
-![cve](/keeper/cve)
+![cve](/keeper/cve.png)
 
 
 Al buscar información sobre esta vulnerabilidad, se localiza el repositorio [matro7sh](https://github.com/matro7sh/keepass-dump-masterkey), donde se encuentra un **POC** en Python diseñado para explotar la vulnerabilidad.

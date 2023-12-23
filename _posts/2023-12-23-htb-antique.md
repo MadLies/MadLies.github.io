@@ -152,7 +152,7 @@ Y al buscar sobre la posible **contraseña** por defecto, se encuentra que esta 
 ![default](/antique/default.png)
 
 
-Al investigar en internet, se puede ver que existe el [**CVE-2002-1048**](https://nvd.nist.gov/vuln/detail/CVE-2002-1048), que consiste en una **divulgación de información** con el que se pueden ver las credenciales de la impresora para el servicio **Telnet**. El problema de este ataque es que es necesario contar con dos cosas: que se encuentre habilitado el servicio **SNMP** (cosa que ya se descubrió) y se necesita saber el **community name**, que por defecto es **public**, pero para las impresoras **JetDirect** también puede ser **internal**. Con esto se puede probar qué sucede; una gran explicación de todo esto se encuentra en el siguiente [blog](http://www.irongeek.com/i.php?page=security/networkprinterhacking).
+Al investigar en internet, se puede ver que existe el [**CVE-2002-1048**](https://nvd.nist.gov/vuln/detail/CVE-2002-1048), que consiste en una **divulgación de información** con el que se pueden ver las credenciales de la impresora para el servicio **Telnet**. El problema de este ataque es que es necesario contar con dos cosas: que se encuentre habilitado el servicio **SNMP** (cosa que ya se descubrió) y se necesita saber el **community name**, que por defecto es **public**, pero para las impresoras **JetDirect** también puede ser **internal**. Con esto se puede probar qué sucede; una gran explicación de todo esto se encuentra en el siguiente blog http://www.irongeek.com/i.php?page=security/networkprinterhacking.(Debo dejar la url hardcodeada ya qué como no usa https no me permite subirlo como link) 
 
 Por lo que se puede realizar la validación gracias **nmpwalk**  con el siguiente comando:
 

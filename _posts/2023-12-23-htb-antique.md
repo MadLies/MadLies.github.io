@@ -11,6 +11,9 @@ image:
 
 ## Resumen
 ![logo](/antique/logo.png){: .right w="200" h="200" }
+**Antique** es una máquina bastante curiosa y representa el meme de que se puede hackear una empresa desde una impresora, y este es el caso. Al iniciar el escaneo de **nmap**, no revela mucha información, al menos no por **TCP**, pero al cambiar a **UDP**, se puede ver que hay un servicio de **SNMP**. Al conectarse por el telnet que está expuesto, se puede ver que el equipo es una impresora, y al investigar en internet se descubre que existe una vulnerabilidad que permite ver la contraseña de la impresora si se encuentra un servicio **SNMP**. Al probarlo, se logra conseguir la contraseña y, por ende, acceso a la máquina.
+
+Una vez dentro de la impresora, existe la posibilidad de ejecutar comandos dentro del sistema, por lo que se envía una **shell reversa**. Ya dentro del equipo, se puede ver que está corriendo un servicio en el puerto **631**, y al realizarle un **curl** se puede ver que es una web que cuenta con un software llamado **CUPS** que es vulnerable. En este punto, se puede realizar una pequeña práctica de **pivoting/portforwarding** para ver la web dentro de nuestro equipo. Ya al ver la versión, se encuentra que se puede realizar un **information disclosure**. Por lo que se puede ver cualquier archivo del equipo, entre ellos la flag de **root** y con eso se termina la máquina.
 
 ## Reconocimiento
 

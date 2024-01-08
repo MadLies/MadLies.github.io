@@ -278,7 +278,7 @@ Dentro de la información revelada, se constata que el servicio de **CloudMe** e
 Al investigar sobre vulnerabilidades para este servicio, se descubre que la versión en cuestión es susceptible a un desbordamiento de búfer (**buffer overflow**). Por lo tanto, se plantea la posibilidad de intentar explotar esta vulnerabilidad con el objetivo de obtener una **shell** con privilegios elevados.
 
 
-![buffer](/buffer/buffer.png)
+![buffer](/buff/buffer.png)
 
 
 ### Pivoting

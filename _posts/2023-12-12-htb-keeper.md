@@ -207,7 +207,7 @@ En este momento, es necesario retroceder sobre los pasos ya dados para intentar 
 
 Con esto en mente, se puede intentar subir la contraseña al traductor de Google y eliminar los valores censurados, con la esperanza de encontrar alguna coincidencia o que el sistema asuma que está mal escrito.
 
-![contraseña](/keeper/contraseña.png)
+![contraseña](/keeper/contrasena.png)
 
 Ahora, asumiendo que el símbolo faltante es **ø**, se puede intentar probar con todas las contraseñas dentro de la web [keeweb](https://app.keeweb.info/) para obtener la información guardada por el usuario.
 

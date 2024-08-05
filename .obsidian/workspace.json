@@ -23,9 +23,11 @@
             "id": "4017d3645d080859",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/img/forest/userBlood.png"
+                "file": "_posts/2024-02-11-htb-crafty.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -158,10 +160,11 @@
   },
   "active": "787943962d71f6f2",
   "lastOpenFiles": [
-    "assets/img/forest/path.png",
-    "assets/img/forest/userBlood.png",
-    "_posts/2023-12-17-htb-wifinetic.md",
+    "_posts/2024-02-11-htb-crafty.md",
     "_posts/2024-08-03-htb-forest.md",
-    "_posts/2024-02-19-htb-builder.md"
+    "_posts/2024-02-19-htb-builder.md",
+    "assets/img/forest/userBlood.png",
+    "assets/img/forest/path.png",
+    "_posts/2023-12-17-htb-wifinetic.md"
   ]
 }

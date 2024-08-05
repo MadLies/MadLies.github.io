@@ -20,11 +20,12 @@ image:
 ---
 
 ## Resumen 
+![logo](/forest/logo.png){: .right w="200" h="200" }
+
 **Forest** es una excelente máquina para practicar temas clave relacionados con **Active Directory**, abarcando diversas etapas. Comenzamos con la **enumeración de usuarios** utilizando **RPC**, y luego lanzamos un ataque de **AS-REP Roasting** gracias a los usuarios obtenidos. Este ataque nos permite conseguir un **ticket** que se puede crackear con **John**, proporcionándonos acceso directo al dominio.
 
 Una vez dentro del dominio, se puede realizar una **enumeración** adicional con la ayuda de **BloodHound** y **SharpHound** para entender de manera gráfica qué está sucediendo en el entorno. Con esta información, podemos observar que, debido a los permisos inadecuados, es posible comprometer todo el dominio. El usuario **svc-alfresco** cuenta con herencia de grupos, incluyendo uno privilegiado que tiene **ACLs** para añadir a un usuario a un grupo con el privilegio **WriteDACL** sobre el dominio. Esto nos permite conceder a nuestro usuario el permiso necesario para ejecutar un ataque **DCSync** y dumpear todos los **hashes** del dominio, completando así la máquina.
 
-![logo](/forest/logo.png){: .right w="200" h="200" }
 
 
 ## Reconocimiento

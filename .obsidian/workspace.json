@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "27f32778abce9f2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d63647c2a751db9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "787943962d71f6f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-08-03-htb-forest.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4017d3645d080859",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "assets/img/forest/userBlood.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "01637f9c4805b434",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5120439f44ba2e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f14b4aecadce4c3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9846823a67e80cac",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "83a576f8d71e0ee9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 240.5
+  },
+  "right": {
+    "id": "7f869ae4c8724dae",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e83bdeeeecdd3d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2c9ecf0e0c66cbbc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2024-08-03-htb-forest.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5c43b52b92aeace5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/2024-08-03-htb-forest.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c03c2f0c09e6209d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6cd738b1a1b0d3cc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2024-08-03-htb-forest.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false
+    }
+  },
+  "active": "787943962d71f6f2",
+  "lastOpenFiles": [
+    "assets/img/forest/path.png",
+    "assets/img/forest/userBlood.png",
+    "_posts/2023-12-17-htb-wifinetic.md",
+    "_posts/2024-08-03-htb-forest.md",
+    "_posts/2024-02-19-htb-builder.md"
+  ]
+}

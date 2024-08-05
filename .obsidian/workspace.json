@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "787943962d71f6f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-08-03-htb-forest.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4017d3645d080859",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-11-htb-crafty.md",
+                "file": "_posts/2024-08-04-htb-sauna.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-08-03-htb-forest.md",
+                "file": "_posts/2024-08-04-htb-sauna.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-08-03-htb-forest.md",
+                "file": "_posts/2024-08-04-htb-sauna.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-08-03-htb-forest.md"
+                "file": "_posts/2024-08-04-htb-sauna.md"
               }
             }
           }
@@ -158,10 +146,17 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "787943962d71f6f2",
+  "active": "4017d3645d080859",
   "lastOpenFiles": [
-    "_posts/2024-02-11-htb-crafty.md",
+    "assets/img/sauna/path.png",
+    "assets/img/sauna/fsmith.png",
+    "assets/img/sauna/names.png",
+    "assets/img/sauna/web.png",
+    "assets/img/sauna",
     "_posts/2024-08-03-htb-forest.md",
+    "_posts/2024-08-04-htb-sauna.md",
+    "_posts/2024-02-11-htb-crafty.md",
+    "_posts/Sans titre.md",
     "_posts/2024-02-19-htb-builder.md",
     "assets/img/forest/userBlood.png",
     "assets/img/forest/path.png",

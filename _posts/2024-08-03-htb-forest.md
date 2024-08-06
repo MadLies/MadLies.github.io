@@ -16,7 +16,7 @@ tags:
   - Groups
 image:
   path: /forest/preview.png
-  alt: Builder
+  alt: Forest
 ---
 
 ## Resumen 

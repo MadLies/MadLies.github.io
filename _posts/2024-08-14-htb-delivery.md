@@ -110,10 +110,15 @@ PORT     STATE SERVICE REASON         VERSION
 
 ### Web Puerto 80
 
+Se puede ver una **web** en la que se nos incita a entrar a dos **links** importantes: uno que nos lleva al subdominio **helpdesk.delivery.htb** y otro que es la página de **contacto** de la misma web.
+
 ![web](/delivery/web.png)
+
+Dentro de **contacto** se nos dice que, en el momento en que consigamos un **email válido** (@delivery.htb), podremos registrarnos dentro de **MatterMost**, que se encuentra corriendo en el puerto **8085**
 
 ![contact](/delivery/contact.png)
 
+Luego, al entrar al subdominio **helpdesk.delivery.htb**, tenemos un error porque no lo tenemos guardado en el **DNS** local. Por lo tanto, podemos hacer uso del archivo `/etc/hosts` para poder acceder a él.
 
 ![contact](/delivery/subdomain.png)
 
@@ -129,12 +134,15 @@ ff02::2     ip6-allrouters
 
 ### Web Puerto 8085
 
+Dentro del puerto **8085** de la máquina hay un servicio de **MatterMost**, el cual es un **chat empresarial** similar a **Slack**.
 
 ![matter](/delivery/matter.png)
 
 >Mattermost es un **conjunto de herramientas de colaboración que tiene como epicentro un servicio de mensajería instantánea**, desde lo cuál se puede acceder al resto de funcionalidades.
 {: .prompt-info}
 
+
+Podemos intentar crear una cuenta; sin embargo, cuando terminamos el proceso, se envía un **código de verificación** al **email** ingresado. Por lo tanto, no podemos hacer gran cosa en este punto, ya que no contamos con un **email válido** de la compañía.
 
 ![verify](/delivery/create.png)
 
@@ -145,10 +153,11 @@ ff02::2     ip6-allrouters
 
 ### Subdominio helpdesk
 
+Por otro lado, dentro del subdominio **helpdesk.delivery.htb** se puede ver un servicio de **osTicket**, el cual se utiliza para generar **tickets** con los que se puede compartir información entre diferentes **usuarios**.
 
 ![helpdesk](/delivery/helpdesk.png)
 
-
+Con eso en mente, podemos intentar crear un **ticket** con información básica para realizar una prueba y ver qué sucede con él.
 
 ![openTicket](/delivery/openTicket.png)
 
@@ -156,10 +165,11 @@ ff02::2     ip6-allrouters
 
 ![createTicket](/delivery/createTicket.png)
 
+Pero al crearlo, podemos ver algo bastante interesante: cuando se crea el **identificador**, se vincula con un **email** de la compañía. Esto nos da una pista de que el ataque podría ir por este medio.
 
 ![ticketInfo](/delivery/ticketInfo.png)
 
-
+Ahora podemos validar la **información del ticket**. Esto se puede hacer ingresando el **email** que se usó para crear el ticket y el **ID** del mismo. Con esto, podemos verificar que la información fue creada tal como la introdujimos y, con ello, llegar a generar un **ataque**.
 
 ![checkTicket](/delivery/checkTicket.png)
 
@@ -171,26 +181,35 @@ ff02::2     ip6-allrouters
 
 ## Explotación 
 
->ddas
+>En este punto, es muy importante tener en cuenta lo que puede suceder debido a esta mala configuración. Podemos contar con un **email** de la compañía, ya que el **ticket** cuenta con uno propio para recibir mensajes. Gracias a esto, podemos hacer que lleguen comunicaciones a nosotros y autenticarnos en diferentes servicios. Este ataque se llama **Ticket Trick** y está muy bien documentado en el siguiente [blog](https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c).
 {: .prompt-info}
 
 
-
+Ahora, con esto en mente, podemos usar el **email** que obtuvimos para crear una cuenta válida dentro de **MatterMost**.
 
 ![validAccount](/delivery/validAccount.png)
 
+Al revisar el **ticket**, podemos ver que el **correo de verificación** ha llegado hasta nosotros. Con esto, podemos obtener el **enlace de validación** y autenticarnos dentro de la herramienta para ver los diferentes **canales de comunicación** con los que cuenta la compañía, con el fin de poder filtrar algún dato interesante.
 
 ![verificationMail](/delivery/verificationMail.png)
 
+Ahora se inicia sesión como el **usuario validado**.
 
 ![login](/delivery/login.png)
 
+Luego, se puede seleccionar qué **canal** nos gustaría ver. En este caso, solo existe uno llamado **internal**, por lo que queremos ver qué información guarda.
 
 ![internal](/delivery/internal.png)
+
+Dentro del chat, podemos ver bastante **información importante**, por lo que vamos a enumerarla:
+
+- Se está filtrando un par de **credenciales** que pueden pertenecer a un **usuario** dentro del servidor.
+- Se filtra la **contraseña** del usuario **root**; sin embargo, se sugiere que es una variante de esta, por lo que tal vez sea necesario aplicar diferentes **reglas con Hashcat** para obtener el valor exacto.
 
 
 ![leak](/delivery/leak.png)
 
+Ahora podemos probar estas **credenciales** por medio del protocolo **SSH** y ver que hemos logrado autenticarnos dentro del **servidor**.
 
 ```python
 ssh maildeliverer@delivery.htb
@@ -209,8 +228,6 @@ Delivery
 maildeliverer@Delivery:~$ ls
 user.txt
 ```
-
-
 
 
 ## Escalada de Privilegios
@@ -419,6 +436,9 @@ MariaDB [mattermost]> select * from Users;
 
 
 Ahora solo es necesario guardar el **hash** y la posible **contraseña** en un archivo, y definir qué conjunto de **variantes** vamos a aplicar para lograr **crackear** el hash.
+
+>Las **reglas** en **Hashcat** son conjuntos de instrucciones que modifican las **contraseñas** generadas durante un **ataque de diccionario** o **fuerza bruta**. Estas reglas permiten aplicar transformaciones como añadir **números**, cambiar **mayúsculas**, añadir **caracteres especiales**, etc., para crear variaciones de las contraseñas y mejorar la cobertura del ataque. Utilizar reglas eficaces puede incrementar significativamente la posibilidad de encontrar contraseñas correctas.
+{: .prompt-info}
 
 ```bash
 cat hash.txt

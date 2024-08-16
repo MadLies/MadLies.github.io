@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-04-htb-sauna.md",
+                "file": "_posts/2024-08-14-htb-delivery.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7825432b54b8a575",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-11-05-htb-analytics.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "promp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-08-04-htb-sauna.md",
+                "file": "_posts/2024-08-14-htb-delivery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-08-04-htb-sauna.md",
+                "file": "_posts/2024-08-14-htb-delivery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-08-04-htb-sauna.md"
+                "file": "_posts/2024-08-14-htb-delivery.md"
               }
             }
           }
@@ -148,22 +160,30 @@
   },
   "active": "4017d3645d080859",
   "lastOpenFiles": [
-    "assets/img/sauna/preview.png",
+    "assets/img/delivery/leak.png",
+    "assets/img/delivery/internal.png",
+    "assets/img/delivery/login.png",
+    "assets/img/delivery/verificationMail.png",
+    "assets/img/delivery/validAccount.png",
+    "assets/img/delivery/data.png",
+    "_posts/2023-11-05-htb-analytics.md",
+    "assets/img/delivery/checkTicket.png",
+    "_posts/2024-08-14-htb-delivery.md",
+    "assets/img/delivery/ticketInfo.png",
+    "assets/img/delivery/createTicket.png",
+    "assets/img/delivery/openTicket.png",
+    "assets/img/delivery/helpdesk.png",
+    "assets/img/delivery/logo.png.crdownload",
+    "assets/img/delivery/preview.png.crdownload",
+    "assets/img/delivery",
+    "_posts/2024-08-04-htb-sauna.md",
     "assets/img/sauna/preview.png.crdownload",
-    "assets/img/sauna/logo.png",
     "assets/img/sauna/logo.png.crdownload",
-    "assets/img/sauna/path.png",
-    "assets/img/sauna/fsmith.png",
-    "assets/img/sauna/names.png",
-    "assets/img/sauna/web.png",
     "assets/img/sauna",
     "_posts/2024-08-03-htb-forest.md",
-    "_posts/2024-08-04-htb-sauna.md",
     "_posts/2024-02-11-htb-crafty.md",
     "_posts/Sans titre.md",
     "_posts/2024-02-19-htb-builder.md",
-    "assets/img/forest/userBlood.png",
-    "assets/img/forest/path.png",
     "_posts/2023-12-17-htb-wifinetic.md"
   ]
 }
